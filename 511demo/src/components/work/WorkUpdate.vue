@@ -101,8 +101,7 @@ textarea {
 }
 
 button {
-  display: block;
-  margin: 10px 0;
+  margin: 2px 0;
   background: crimson;
   color: #fff;
   border: 0;

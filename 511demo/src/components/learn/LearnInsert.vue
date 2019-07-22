@@ -13,7 +13,7 @@
         <input type="text" placeholder="请输入学习的内容" v-model="content.desc" />
 
         <p>学习详细内容</p>
-        <textarea type="text" placeholder="请输入详细的学习的内容" v-model="content.details"></textarea>
+        <!--textarea type="text" placeholder="请输入详细的学习的内容" v-model="content.details"></textarea -->
         <Editor id="tinymce" v-model="content.details" :init="editorInit"></Editor>
 
         <p>分类情况</p>
