@@ -16,7 +16,6 @@
           <th>记录时间</th>
           <th>分类</th>
           <th>描述</th>
-          <th>描述</th>
           <th>点评</th>
           <th>操作按钮</th>
         </tr>
@@ -27,9 +26,7 @@
           <td>{{content.datetime}}</td>
           <td>{{type2name(content.tid)}}</td>
           <td>{{content.desc}}</td>
-          <td>
-            <div v-html="content.details.substring(0,14)" />
-          </td>
+          <!--<td><div v-html="content.details.substring(0,14)" /></td> -->
           <td>{{content.remark}}</td>
           <td>
             <router-link :to="'/learnDetails/'+ content.id" class="btn btn-success">详情</router-link>
