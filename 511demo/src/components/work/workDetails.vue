@@ -8,23 +8,32 @@
       </span>
     </h1>
 
-    <br>
+    <br />
     <div class="well">
-      <ul class="list-group">
 
 
-        <li class="list-group-item">
-          <label>学习日期: {{work.id}}</label>
+          <div class="form-group">
+            <label>学习日期</label>
+            <input type="text" v-model="work.id" required />
+          </div>
 
-           <label>学习啥时间</label>
-          <input type="text" v-model="work.id" required>
-          <label>学习点评: {{work.record}}</label>
-          <label>创建时间: {{work.creationdt}}</label>
-          <label>更新时间: {{work.updatedt}}</label>
-        </li>
-      </ul>
-      <br>
-      <br>
+          <div class="form-group">
+            <label>学习点评</label>
+            <input type="text" v-model="work.record" required />
+          </div>
+
+          <div class="form-group">
+            <label>创建时间</label>
+            <input type="text" v-model="work.creationdt" required />
+          </div>
+
+          <div class="form-group">
+            <label>更新时间</label>
+            <input type="text" v-model="work.updatedt" required />
+          </div>
+
+      <br />
+      <br />
     </div>
   </div>
 </template>
@@ -56,7 +65,7 @@ export default {
   },
 
   created() {
-    this.fetchContent(this.$route.params.id)
+    this.fetchContent(this.$route.params.id);
   }
 };
 </script>
