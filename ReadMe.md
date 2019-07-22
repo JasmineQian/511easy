@@ -1,7 +1,7 @@
-# Getting Started
+### this is a simple demo for my daughter's learn 
 
-### Reference Documentation
-For further reference, please consider the following sections:
+#### it is aim at adding the content she learns every day
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
 
+#### and this is the back api System
+#### the related UI System is in antoher git 

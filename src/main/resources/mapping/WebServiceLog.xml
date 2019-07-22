@@ -6,7 +6,7 @@
     <insert id="insertSelective" parameterType="com.example.demo.bean.Servert.WebserviceLog">
         insert swebservicelog(sessionid,remoteipaddr,requesturl,start_dt,end_dt,clienthost,useragent,method,params,paramsvalue,return_msg,exception,creation_dt,update_dt,creationuid,
         updateuid,name,return_code,return_message,source)
-        values(#{sessionid},#{remoteipaddr},#{requesturl},#{start_dt},#{end_dt},#{clienthost},#{useragent},#{method},#{params},#{paramsvalue},#{return_msg},#{exception},#{creation_dt},#{update_dt},
+        values(#{sessionid},#{remoteipaddr},#{requesturl},#{start_dt},#{end_dt},#{clienthost},#{useragent},#{method},#{params},'mark在mapxml中',#{return_msg},#{exception},#{creation_dt},#{update_dt},
         #{creationuid},#{updateuid},#{name},#{return_code},#{return_message},#{source})
     </insert>
 
