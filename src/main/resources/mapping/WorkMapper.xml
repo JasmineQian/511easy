@@ -16,14 +16,14 @@
     </resultMap>
 
     <select id="getByid" resultMap="Result">
-        select id,uid,record,creationdt,updatedt
+        select id,uid,record, DATE_FORMAT(creationdt,'%Y年%m月%d日') as creationdt,updatedt
         from bwork
         WHERE id =#{id}
     </select>
 
 
     <select id="getWorks" resultMap="Result">
-        select id,uid,record,creationdt,updatedt
+        select id,uid,record,DATE_FORMAT(creationdt,'%Y年%m月%d日') as creationdt,updatedt
         from bwork
         order by id desc
     </select>
