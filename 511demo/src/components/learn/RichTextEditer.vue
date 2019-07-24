@@ -87,14 +87,14 @@ export default {
     // 用于上传图片的，后端需要提供好上传接口
     handleImgUpload(blobInfo, success, failure) {
       let formdata = new FormData();
-      formdata.set("upload_file", blobInfo.blob());
-      let new_headers = { headers: this.headers };
-      let upload_url = process.env.BASE_API + "/uploadfile";
+      formdata.set("image", blobInfo.blob());
+      let new_headers = { headers:"Content-Type: multipart/form-data" };
+      let upload_url = "api/upload/image";
        this.$http
         .post(upload_url, formdata, new_headers)
         .then(res => {
           console.log(res.data.data)
-          success(res.data.data[0]);
+          success(res.data.data);
         })
         .catch(res => {
           failure("error");

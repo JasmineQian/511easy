@@ -51,7 +51,7 @@ public class LogFilter implements Filter {
     @Value("${sys.name}")
     private String sysName;
 
-    private Pattern ignore = Pattern.compile(".*/webjars/.*$|.*/v2/.*$|.*/swagger.*$|.*/configuration/.*$|.*/images/.*|.*/farvirate.ico|.*/actuator.*");
+    private Pattern ignore = Pattern.compile(".*/webjars/.*$|.*/v2/.*$|.*/swagger.*$|.*/configuration/.*$|.*/image.*|.*/farvirate.ico|.*/actuator.*");
 
     static final Pattern BLANK = Pattern.compile("\\t|\r|\n");
 
