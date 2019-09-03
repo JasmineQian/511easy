@@ -36,6 +36,9 @@
           <router-link to="/work" class="nav-link">工作记录</router-link>
         </li>
         <li>
+          <router-link to="/motivate" class="nav-link">自律情况</router-link>
+        </li>
+        <li>
           <router-link to="/admin" class="nav-link">管理</router-link>
         </li>
         <li>

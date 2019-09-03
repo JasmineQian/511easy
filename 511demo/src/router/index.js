@@ -18,6 +18,9 @@ import WorkDetails from '@/components/work/WorkDetails'
 import WorkUpdate from '@/components/work/WorkUpdate'
 import WorkInsert from '@/components/work/WorkInsert'
 
+import Motivate from '@/components/motivate/Motivate'
+import Activity from '@/components/motivate/Activity'
+
 import Register from '@/components/Register'
 import About from '@/components/about/About'
 
@@ -50,6 +53,8 @@ export default new Router({
     {path: '/workUpdate/:id',component:WorkUpdate},
     {path: '/workInsert',component:WorkInsert},
 
+    {path: '/motivate',component:Motivate},
+    {path: '/activity/:uid',component:Activity},
 
     {path: '/admin',component: Admin},
     {path: '/typeAdd',component: AdminInsert},
